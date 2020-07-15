@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body.dragging,
+        body.dragging * {
+            cursor: move !important;
+        }
+
+        .dragged {
+            position: absolute;
+            opacity: 0.5;
+            z-index: 2000;
+        }
+
+        ol.example li.placeholder {
+            position: relative;
+            /** More li styles **/
+        }
+
+        ol.example li.placeholder:before {
+            position: absolute;
+            /** Define arrowhead **/
+        }
+
+        ol{
+            list-style: none;
+            float: left;
+        }
+
+        ol li{
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <ol class="example">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+    <ol class="example">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+    <ol class="example">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+    <!-- <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table> -->
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src='js/jquery-sortable.js'></script>
+    <script>
+        $(function () {
+            $("ol.example").sortable()
+        })
+    </script>
+</body>
+
+</html>

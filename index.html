@@ -17,47 +17,29 @@
 	<script>
 		function getdata() {
 			//请求后端数据
-			// var DATA = {
-			// 	'appL': {
-			// 		'avatar': '头像信息',
-			// 		'comment': '留言簿',
-			// 		'doing': '最新动态',
-			// 	},
-			// 	'appM': {
-			// 		'blog': 'blog',
-			// 		'profile': '个人资料',
-			// 		'spaceinfo': '空间介绍',
-			// 		'friends': '我的好友'
-			// 	},
-			// 	'appR': {
-			// 		'gallery': '我的相册',
-			// 		'visitors': '最近访客',
-			// 		'thread': '我的话题'
-			// 	}
-			// };
-			var DATA = [
-				{
+			var DATA = {
+				'appL': {
 					'avatar': '头像信息',
 					'comment': '留言簿',
 					'doing': '最新动态',
 				},
-				{
+				'appM': {
 					'blog': 'blog',
 					'profile': '个人资料',
 					'spaceinfo': '空间介绍',
 					'friends': '我的好友'
 				},
-				{
+				'appR': {
 					'gallery': '我的相册',
 					'visitors': '最近访客',
 					'thread': '我的话题'
 				}
-			]
+			};
 			return DATA;
 		}
 		$(document).ready(function () {
 			var res = getdata();
-			// Jh.fn.init(res);
+			Jh.fn.init(res);
 			Jh.Portal.init(res);
 		});
 	</script>

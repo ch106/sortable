@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-	<script type="text/javascript" src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <style type="text/css">
         div {
@@ -12,12 +12,16 @@
             overflow-y: auto;
         }
 
-        ul {
+        .drag-box {
             margin: 0;
             padding: 0;
             list-style: none;
             box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
-            display: inline-block;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100px;
+            overflow: scroll;
         }
 
         .drag-item {
@@ -38,14 +42,14 @@
 </head>
 
 <body>
-    <ul class="drag-box">
+    <div class="drag-box">
 
-    </ul>
+    </div>
 </body>
 <script type="text/javascript">
     new Drag({
         container: '.drag-box',
-        data: ['应用1', '应用2', '应用3', '应用4', '应用5', '应用6', '应用7', '应用8', '应用9']
+        data: ['应用1', '应用2', '应用3', '应用4', '应用5', '应用6', '应用7', '应用8', '应用9','应用1', '应用2', '应用3', '应用4', '应用5', '应用6', '应用7', '应用8', '应用9','应用1', '应用2', '应用3', '应用4', '应用5', '应用6', '应用7', '应用8', '应用9','应用1', '应用2', '应用3', '应用4', '应用5', '应用6', '应用7', '应用8', '应用9','应用1', '应用2', '应用3', '应用4', '应用5', '应用6', '应用7', '应用8', '应用9']
     });
 </script>
 

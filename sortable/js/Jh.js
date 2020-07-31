@@ -218,7 +218,7 @@ Jh.fn = function (a) {
                     c = a.find("a").attr("rel"),
                     c = $("#" + c),
                     a = a.find(".ok");
-                a.is(":visible") ? (a.hide(), c.hide()) : (a.show(), c.show()); 
+                a.is(":visible") ? (a.hide(), c.hide()) : (a.show(), c.show());
                 Jh.Util.refresh()
             })
         },
